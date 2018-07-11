@@ -3,6 +3,6 @@
   <p>
     <% @patient.appointments.each do |app| %>
       <%= app.appointment_datetime.strftime('%B %d, %Y') %> -
-      <%= link_to app.patient.name, patient_path(app.patient) %>
+      <%= link_to app.doctor.name, patient_path(app.patient) %>
   </p>
   <% end %>
