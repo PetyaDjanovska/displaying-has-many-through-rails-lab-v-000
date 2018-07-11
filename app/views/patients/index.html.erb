@@ -3,6 +3,6 @@
   <li>
     Name: <%= p.name %>,
     <%= link_to "Patient's page", patient_path(p) %>,
-    Number of Appointments: <%= appointments.count %>
+    Number of Appointments: <%= p.appointments.count %>
 <% end %>
 </ul>
