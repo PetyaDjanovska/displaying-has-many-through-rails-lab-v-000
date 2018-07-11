@@ -1,4 +1,4 @@
 class Appointment < ActiveRecord::Base
   belongs_to :doctors
-  belong_to :patients
+  belongs_to :patients
 end
