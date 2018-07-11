@@ -3,6 +3,6 @@
   <li>
     <%= d.name %>,
     <%= link_to "Doctor's page", doctor_path(d) %>,
-    <%= d.patients.count %> patients
+    <%= pluralize(d.patients.count, 'patient') %>
 <% end %>
 </ul>
