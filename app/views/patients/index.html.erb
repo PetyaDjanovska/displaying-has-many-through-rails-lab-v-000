@@ -1,7 +1,7 @@
 <ul>
 <% @patients.each do |p| %>
   <li>
-    <%= p.name %>,
+    Name: <%= p.name %>,
     <%= link_to "Patient's page", patient_path(p) %>,
     <%= pluralize(p.appointments.count, 'appointment') %>
 <% end %>
